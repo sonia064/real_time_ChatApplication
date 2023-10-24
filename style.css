@@ -19,7 +19,16 @@ body {
     padding: 20px;
 }
 
-.message, .reply-message {
+
+.reply-message {
+    background-color: #f88888; 
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.message {
     background-color: #d4f2db;
     border-radius: 10px;
     padding: 10px;
@@ -27,12 +36,14 @@ body {
     position: relative;
 }
 
-.reply-message {
-    background-color: #f2d4d4;
-}
 
 .message-text {
     font-size: 16px;
+}
+
+.message-info {
+    font-size: 12px;
+    color: #777;
 }
 
 .reply-button {
@@ -80,4 +91,20 @@ button#send {
 
 button#send:hover {
     background-color: #128c7e;
+}
+
+
+button#clear-chat {
+    background-color: #ff4b4b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button#clear-chat:hover {
+    background-color: #ff1919;
 }

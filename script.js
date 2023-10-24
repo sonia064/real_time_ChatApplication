@@ -45,4 +45,21 @@ $(document).ready(function() {
     setInterval(function() {
         getMessages();
     }, 2000);
+
+
+
+
+
+     // Clear Chat button click event
+     $('#clear-chat').click(function() {
+        if (confirm('Are you sure you want to clear the chat history?')) {
+            $.ajax({
+                url: 'clear.php',
+                type: 'GET',
+                success: function() {
+                    getMessages(); 
+                }
+            });
+        }
+    });
 });
